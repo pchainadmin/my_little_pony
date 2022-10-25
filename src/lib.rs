@@ -27,7 +27,7 @@ pub extern "C" fn alloc(len: u32) -> *mut u8 {
 }
 
 extern "C" {
-    pub(crate) fn set(_: *const u8, _: u32, _: *const u8, _: u32);
+    pub(crate) f set(_: *const u8, _: u32, _: *const u8, _: u32);
     pub(crate) fn get(_: *const u8, _: u32, _: *const u32) -> i64;
     pub(crate) fn get_transaction_from_address(_: *const u32) -> u32;
     pub(crate) fn get_transaction_to_address(_: *const u32) -> u32;
